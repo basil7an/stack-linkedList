@@ -15,7 +15,7 @@ class LinkedList {
       current.next = newNode;
     }
   }
- 
+ //challenge 3
   void printInReverse() {
     void printReverse(Node? node) {
       if (node == null) return;
@@ -25,7 +25,8 @@ class LinkedList {
 
     printReverse(head);
   }
- 
+
+   //challenge 4
   void findMiddleNode() {
     var slow = head;
     var fast = head;
@@ -41,7 +42,7 @@ class LinkedList {
       print("The list is empty.");
     }
   }
- 
+  //challenge 5
   void reverse() {
     Node? prev = null;
     var current = head;
@@ -55,7 +56,8 @@ class LinkedList {
 
     head = prev;
   }
- 
+  
+  //challenge 6
   void removeAllOccurrences(var value) { 
     while (head != null && head!.data == value) {
       head = head!.next;
